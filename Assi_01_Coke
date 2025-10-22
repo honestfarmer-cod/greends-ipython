@@ -1,0 +1,10 @@
+
+Em_falta = 50
+
+while Em_falta > 0:
+    print(f"Amount Due: {Em_falta}")
+    coin = int(input("Insert Coin: "))
+    if coin in [5, 10, 25]:
+        Em_falta -= coin
+
+print(f"Change Owed: {abs(Em_falta)}")
